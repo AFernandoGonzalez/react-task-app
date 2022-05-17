@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efead8;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tasksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* List Task */
+
+h1 {
+  color: #15133c;
+  text-align: center;
+  font-size: 26px;
+}
+
+.listTask {
+  width: 600px;
+  min-height: 500px;
+  background-color: #d0c9c0;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* single task */
+.singletaskContainer {
+  display: flex;
+  background-color: #15133c;
+  justify-content: space-between;
+  /* border-radius: 10px; */
+  margin: 0.5rem;
+}
+
+.task-text {
+  color: white;
+  padding: 1rem;
+}
+
+.task-icon {
+  color: white;
+  background-color: #FF8080;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.task-icon:hover {
+  background-color: #FD5D5D;
+}
+
+.singletaskContainer.completed {
+  background-color: #b689c0;
+  text-decoration: line-through;
+}
+
+/*  */
+.task-form {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+input[type="text"] {
+  outline: none;
+}
+
+.taskinput,
+.btn-task {
+  border: none;
+  padding: 1rem;
+}
+
+.btn-task {
+  background-color: #efead8;
+  cursor: pointer;
+}
+
+.btn-task:hover {
+  background-color: #fff3cf;
+}
+
+/* Task List */
+
+.list-task-container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  margin-top: 1rem;
+}
